@@ -1,0 +1,172 @@
+*,
+*::after
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --bg-color: #333;
+    --ff-primary:'Poppins', sans serif;
+
+    --color-primary:rgb(45, 74, 61);
+    --bg-body:  #f2eeea;
+    
+    --fclr-primary: rgb(32, 30, 30);
+
+    --fs-primary:1rem;
+    --fs-second: 1.2rem;
+    --fs-third: 1.8rem;
+}
+
+body{
+    background-color: var(--bg-body);
+    font-family: var(--ff-primary);
+    text-align: center;
+    color: var(--color-primary);
+}
+
+header, section{
+    padding: 1rem 0;
+}
+
+h1, h2 {
+    font-weight: 550;
+    line-height: 0.8;
+}
+
+h1{
+    font-size: var(--fs-second);
+}
+
+h2{
+    font-size: var(--fs-third);
+}
+
+
+.container{
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+table{
+    width: min(100%, 70.5rem);
+}
+
+td {
+    font-weight: 400;
+    font-size: var(--fs-primary);
+}
+
+th {
+    font-weight: 450;
+    font-size: var(--fs-second);
+}
+
+td, th {
+    padding: 0.5rem;
+	margin: 0;
+	border: 1.5px solid var(--color-primary);
+	text-align: center;
+    color: var(--fclr-primary);
+}
+
+label{
+    margin-bottom: .5rem;   
+}
+
+.paciente:hover{
+    cursor: pointer;
+    background-color: rgb(255, 152, 152);
+}
+
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+    width: 19rem;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+    border-radius: 0.8rem;
+    border-color: var(--color-primary);
+    font-weight: 600;
+}
+
+.grupo{
+    font-weight: 450;
+    font-size: var(--fs-second);
+    color: var(--fclr-primary);
+	display: inline-block;
+    margin: 1rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    margin-inline: auto;
+}
+
+form > *{
+    flex: 0 0 20rem;
+}
+
+.botao{
+    box-shadow: rgb(21, 34, 28);
+	border: 0;
+	border-bottom: .3rem;
+    border-radius: 0.8rem;
+
+	cursor: pointer;
+	color: #fff;
+	font-size: var(--fs-second);
+	background-color: var(--color-primary);
+    
+	padding: .5rem 3rem;
+
+    margin-top: 0.4rem;
+}
+
+/* RESPONSIVE */
+
+
+
+
+
+/* JS */
+li{
+    list-style: none;
+}
+
+.paciente-invalido {
+    background-color: lightcoral;
+}
+
+#The-Fault{
+    color: red; 
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#filtrar-tabela{
+    width: 12rem;
+    height: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.invisivel{
+    display: none;
+}
