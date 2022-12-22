@@ -13,25 +13,12 @@ tabela.addEventListener('dblclick', function(event) {
         event.target.parentNode.remove();
     }, 700);
  
+    //Para descobrirmos qual filho foi clicado, utilizaremos o event como parâmetro na função
+    //Ele irá nos dizer quem foi clicado, quem foi o alvo, pela propriedade target.
 
+    //Para selecionarmos o pai de um elemento, trabalharemos com a propriedade parentNode.
+    //paiDoAlvo.remove();
+    //Enquanto o this se refere ao dono do evento, o event.target será quem sofreu propriamente o evento.
 });
 
 
-
-
-
-
-
-
-//var alvoEvento = event.target 
-//Para descobrirmos qual filho foi clicado, utilizaremos o event como parâmetro na função
-//Ele irá nos dizer quem foi clicado, quem foi o alvo, pela propriedade target.
-//var paiDoAlvo = alvoEvento.parentNode;
-//Para selecionarmos o pai de um elemento, trabalharemos com a propriedade parentNode.
-//paiDoAlvo.remove();
-//Enquanto o this se refere ao dono do evento, o event.target será quem sofreu propriamente o evento.
-// pacientes.forEach(function(paciente) {
-//     paciente.addEventListener("dblclick", function() {
-//     this.remove();
-//     });
-// });  

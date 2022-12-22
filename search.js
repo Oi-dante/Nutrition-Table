@@ -1,6 +1,6 @@
-var campoFiltro = document.querySelector("#filtrar-tabela");
+var pesquisar = document.querySelector("#filtrar-tabela");
 
-campoFiltro.addEventListener("input", function() {
+pesquisar.addEventListener("input", function() {
     var pacientes = document.querySelectorAll(".paciente");
 
     if( this.value.length > 0){
@@ -23,4 +23,6 @@ campoFiltro.addEventListener("input", function() {
         }
     }
 
+    //VARIAVEIS REPONSAVEIS PELA BARRA DE PESQUISA DA TABELA, VAI PUXAR OS CARACTERES DE CADA NOME
+    // E NO RESTANTE APLICAR A CLASSE "INVISIVEL"
 });

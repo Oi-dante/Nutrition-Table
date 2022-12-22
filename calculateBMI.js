@@ -16,14 +16,12 @@ for (var i = 0; i < pacientes.length; i++) {
     var alturaEhValida = validaAltura(altura);
 
     if (!pesoEhValido){
-        console.log("Peso inválido!");
         pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
         paciente.classList.add("paciente-invalido");
     }
 
     if (!alturaEhValida) {
-        console.log("Altura inválida!");
         alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
         paciente.classList.add("paciente-invalido");
@@ -34,8 +32,9 @@ for (var i = 0; i < pacientes.length; i++) {
         tdImc.textContent = imc;
         
     }
+    //FOR COM A UTILIDADE DE CASO O PACIENTE COM UM PESO OU ALTURA INVALIDO SEJA COLOCADO 
+    //NA TABELA ELA IRÁ MOSTRAR O ERRO
 }
-
 
 // FUNÇÕES DE VALIDAÇÃO DO PESO E ALTURA
 function validaPeso(peso){
@@ -46,7 +45,6 @@ function validaPeso(peso){
         return false;
     }
 }
-
 function validaAltura(altura) {
 
     if (altura >= 0 && altura <= 3.0) {

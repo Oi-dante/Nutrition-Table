@@ -110,4 +110,4 @@ function validaPaciente(paciente){
 
     return erros;
 }
-
+ 
