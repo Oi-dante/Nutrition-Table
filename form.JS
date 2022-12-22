@@ -84,27 +84,27 @@ function validaPaciente(paciente){
     var erros = [];
     
     if(!validaPeso(paciente.peso)) {
-        erros.push("Weight is invalid!");
+        erros.push("Peso inválido!");
     }
 
     if(!validaAltura(paciente.altura)) {
-        erros.push("Height is invalid!");
+        erros.push("Altura inválida!");
     }
 
     if( paciente.nome.length == 0){
-        erros.push("Name is invalid!"); 
+        erros.push("Nome inválido!"); 
     }
 
     if( paciente.gordura.length == 0){
-        erros.push("Body Fat is invalid!");
+        erros.push("Gordura corporal inválida!");
     }
 
     if( paciente.peso.length == 0){
-        erros.push("Weight is blank!");
+        erros.push("Altura está em branco!");
     }
 
     if( paciente.altura.length == 0){
-        erros.push("Height is blank!");
+        erros.push("Peso está em branco!");
     }
     
 
