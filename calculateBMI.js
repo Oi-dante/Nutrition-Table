@@ -32,7 +32,7 @@ for (var i = 0; i < pacientes.length; i++) {
         tdImc.textContent = imc;
         
     }
-    //FOR COM A UTILIDADE DE CASO O PACIENTE COM UM PESO OU ALTURA INVALIDO SEJA COLOCADO 
+    //FOR COM A UTILIDADE, CASO O PACIENTE COM UM PESO OU ALTURA INVALIDO SEJA COLOCADO 
     //NA TABELA ELA IRÁ MOSTRAR O ERRO
 }
 

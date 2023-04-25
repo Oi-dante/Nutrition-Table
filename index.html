@@ -10,18 +10,18 @@
 	</head>
 	<body>
 
-		<header>
-			<div class="container">
-				<h1>Tabela Nutricional</h1>
-			</div>
-		</header>
-		<main>
-
+	
+		<main>	
 			<section class="container">
-				<h2>Meus Pacientes</h2>
+				
+				<h1>Tabela Nutricional</h1>
+
 				<label for="filtrar-tabela"></label>
 				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Pesquisar" autofocus class="campo">
+
+				
 				<table>
+					<caption>Meus Pacientes</caption>
 					<thead>
 						<tr>
 							<th>Nome</th>
@@ -31,6 +31,7 @@
 							<th>IMC</th>
 						</tr>
 					</thead>
+
 					<tbody id="tabela-pacientes">
 						<tr class="paciente" >
 							<td class="info-nome">Paulo</td>
@@ -71,12 +72,11 @@
 							<td class="info-imc">0</td>
 						</tr>
 					</tbody>
-				</table>
 
 			</section>
 		</main>
         
-        <section class="container">
+        <section class="container-form">
             <h2 id="titulo-form">Adicionar Novo Paciente</h2>
 			<ul id="The-Fault">	
 			</ul>
@@ -98,7 +98,7 @@
                     <input id="gordura" type="number" placeholder="Digite a porcentagem de gordura do paciente" class="campo campo-medio">
                 </div>
 				
-                <button type="submit" id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+                <button type="submit" id="adicionar-paciente" class="button bto-principal">Adicionar</button>
             </form>
         </section>
 	</body>

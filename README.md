@@ -1,10 +1,12 @@
 <h1 align="center">📑 Nutrition-Table 🍎</h1>
 
-<p align="center">This project was created from studies by Alura</p>
+<p align="center">Software to plan day to day tasks, project.</p>
 <img src="./_resource/readmeimg.png">
 
 
-- <a href="https://cursos.alura.com.br/aluraflix">For more information</a> 
+
+<p>This project was made following Front End Mentor's design, you can see the challenge by <a href="">clicking here.</a>
+
 - <a href="https://cursos.alura.com.br/course/javascript-programando-na-linguagem-web">Original challenge</a>
 
 
@@ -15,9 +17,6 @@
 </a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
   <img src="https://img.shields.io/badge/CSS3-white?style=for-the-badge&logo=css3&logoColor=1572B6"/>
-</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
 </a>
 
 
