@@ -8,11 +8,12 @@
 
 :root {
 
-    --bg-color: #333;
+    --bg-color: #e7e7e7;
     --ff-primary:'Poppins', sans serif;
 
-    --color-primary:rgb(45, 74, 61);
-    --bg-body:  #f2eeea;
+    --color-primary:rgba(71, 83, 70, 0.841);
+    --color-second:hsla(115, 16%, 29%, 0.685);
+    --color-third:hsla(115, 16%, 29%,0.397);
     
     --fclr-primary: rgb(32, 30, 30);
 
@@ -22,35 +23,41 @@
 }
 
 body{
-    background-color: var(--bg-body);
+    background-color: var(--bg-color);
     font-family: var(--ff-primary);
-    text-align: center;
-    color: var(--color-primary);
+    
 }
 
 header, section{
     padding: 1rem 0;
 }
 
-h1, h2 {
-    font-weight: 550;
-    line-height: 0.8;
-}
-
 h1{
-    font-size: var(--fs-second);
-}
-
-caption{
+    font-weight: 600;
+    line-height: 0.8;
+    padding: 1rem;
     font-size: var(--fs-third);
-}
-caption {
     text-align: center;
 }
 
+h2{
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    font-size: var(--fs-third);
+    background: var(--color-second);
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+    padding-left: 2rem;
+    border-radius: 0.8rem ;
+}
+
+
+
 
 /* TABLE */
-.container{
+.table-container{
     width: min(900px, 100% - 3rem);
     margin-inline: auto;
 
@@ -58,37 +65,65 @@ caption {
 
 
 table{
+    width: 100%;
     border-collapse: collapse;
-    background: var(--bg-body);
-    width: min(100%, 70.5rem);
 }
 
-td {
-    font-weight: 400;
-    font-size: var(--fs-primary);
-}
-
-
-td, th {
-    padding: 1rem;
-	margin: 0;
-	border: 1.5px solid var(--color-primary);
-	text-align: center;
-    color: var(--fclr-primary);
-}
-
+th, td {
+    padding: 1.5rem;
+} 
+  
 
 th {
     font-weight: 450;
     font-size: var(--fs-second);
-    background: hsla(115, 16%, 29%, 0.685);
+    background: var(--color-second);
 }
+
 tr:nth-of-type(2n){
-    background: hsla(115, 16%, 29%, 0.534);
+    background:var(--color-third)
 }
 
 
+/* RESPONSIVE */
 
+@media (max-width: 40rem) {
+    th{
+        display: none;
+    }
+    td {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    td:first-child {
+        padding-top: 1rem;
+    }
+    td:last-child {
+        padding-top: 1rem;
+    }
+    td::before {
+        font-weight: 450;
+    }
+    td:nth-of-type(1):before {
+        content: "Nome: ";
+    }
+    td:nth-of-type(2):before {
+        content: "Peso: ";
+    }
+    td:nth-of-type(3):before{
+        content: "Altura: ";
+    }
+    td:nth-of-type(4):before{
+        content: "Gordura Corporal(%): ";
+    }
+    td:nth-of-type(5):before{
+        content: "IMC: ";
+    }
+  
+
+    
+}
 
 
 /* FORM */
@@ -112,10 +147,10 @@ label{
 	margin: 0;
 	padding-bottom: 1em;
 	width: 100%;
-	border: 1px solid #ccc;
+	border: 2px solid #ccc;
 	padding: .7em;
     border-radius: 0.8rem;
-    border-color: var(--color-primary);
+    border-color: var(--color-second);
     font-weight: 600;
 }
 
@@ -155,32 +190,6 @@ form > *{
 
     margin-top: 0.4rem;
 }
-
-/* RESPONSIVE */
-
-/* @media (max-width: 650px) {
-    thead, tr, th{
-        display: none;
-    }
-
-    td {
-        display: block;
-        padding: 0.5rem 1rem;
-    }
-
-    td:first-child {
-        padding-top: 2rem;
-    }
-    td:last-child {
-        padding-bottom: 2rem;
-    }
-
-    td::before{
-        font-weight: 700;
-        text-transform: capitalize;
-    }
-} */
-
 
 
 /* JS */

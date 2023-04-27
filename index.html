@@ -5,32 +5,38 @@
 		<title>Nutrition Table</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="style.css">
+
+
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 	
 	</head>
 	<body>
 
-	
-		<main>	
-			<section class="container">
-				
-				<h1>Tabela Nutricional</h1>
+		<header>
+			<div>
+				<h1>Nutrition Table</h1>
+			</div>
+		</header>
+		<main>
+
+			<section class="table-container">
+
+				<h2> Meus Pacientes </h2>
 
 				<label for="filtrar-tabela"></label>
 				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Pesquisar" autofocus class="campo">
-
 				
+
 				<table>
-					<caption>Meus Pacientes</caption>
-					<thead>
-						<tr>
-							<th>Nome</th>
-							<th>Peso(kg)</th>
-							<th>Altura(m)</th>
-							<th>Gordura Corporal(%)</th>
-							<th>IMC</th>
-						</tr>
-					</thead>
+
+					<tr>
+						<th>Nome</th>
+						<th>Peso(kg)</th>
+						<th>Altura(m)</th>
+						<th>Gordura Corporal(%)</th>
+						<th>IMC</th>
+					</tr>
+					
 
 					<tbody id="tabela-pacientes">
 						<tr class="paciente" >
@@ -70,14 +76,18 @@
 							<td class="info-altura">1.55</td>
 							<td class="info-gordura">19</td>
 							<td class="info-imc">0</td>
-						</tr>
+					</tr>
 					</tbody>
+					
+				</table>
 
 			</section>
 		</main>
         
-        <section class="container-form">
+        <section class="table-container">
+			
             <h2 id="titulo-form">Adicionar Novo Paciente</h2>
+
 			<ul id="The-Fault">	
 			</ul>
             <form id="form-adiciona">
