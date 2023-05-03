@@ -24,7 +24,6 @@
 body {
   background-color: var(--bg-color);
   font-family: var(--ff-primary);
-    
 }
 
 header, section {
@@ -32,33 +31,33 @@ header, section {
 }
 
 h1 {
+  padding: 1rem;
+
   font-weight: 600;
   line-height: 0.8;
-  padding: 1rem;
   font-size: var(--fs-third);
   text-align: center;
 }
 
 h2 {
+  padding: 0.5em;
+
+  text-align: left;
   font-weight: 500;
   line-height: 1.5;
-  text-align: left;
   font-size: var(--fs-third);
+  color: #fff;
+
   background: var(--color-secondary);
-  display: flex;
-  align-items: center;
-  padding: .2rem;
-  padding-left: 2rem;
   border-radius: 0.8rem ;
 }
 
-/* TABLE */
-.table-container {
+.container {
   width: min(900px, 100% - 3rem);
   margin-inline: auto;
-
 }
 
+/* TABLE */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -71,11 +70,13 @@ th, td {
 th {
   font-weight: 450;
   font-size: var(--fs-second);
+  color: #fff;
+
   background: var(--color-secondary);
 }
 
 tr:nth-of-type(2n) {
-  background:var(--color-tertiary)
+  background: var(--color-tertiary)
 }
 
 /* RESPONSIVE */
@@ -132,37 +133,13 @@ label {
   background-color: rgb(255, 152, 152);
 }
 
-.campo-medio {
-	display: inline-block;
-	padding-right: .5em;
-  width: 19rem;
-}
-
-.campo {
-	margin: 0;
-	padding-bottom: 1em;
-	width: 100%;
-	border: 2px solid #ccc;
-	padding: .7em;
-  border-radius: 0.8rem;
-  border-color: var(--color-secondary);
-  font-weight: 600;
-}
-
-.grupo {
-  font-weight: 450;
-  font-size: var(--fs-second);
-  color: var(--clr-neutral-900);
-	display: inline-block;
-  margin: 1rem;
-}
-
 form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 60rem;
+  gap: 1rem;
+
   margin-inline: auto;
 }
 
@@ -170,10 +147,29 @@ form > * {
   flex: 0 0 20rem;
 }
 
+.grupo {
+	display: inline-block;
+
+  font-weight: 450;
+  font-size: var(--fs-second);
+  color: var(--clr-neutral-900);
+}
+
+.campo {
+	padding: 0.7em;
+
+	border: 2px solid var(--color-secondary);
+  border-radius: 0.8rem;
+
+  font-weight: 600;
+}
+
+.campo-medio {
+  min-width: 19rem;
+}
+
 .button {
-  box-shadow: rgb(21, 34, 28);
 	border: 0;
-	border-bottom: .3rem;
   border-radius: 0.8rem;
 
 	cursor: pointer;
@@ -181,9 +177,7 @@ form > * {
 	font-size: var(--fs-second);
 	background-color: var(--color-primary);
 
-	padding: .5rem 3rem;
-
-  margin-top: 0.4rem;
+	padding: 0.5rem 3rem;
 }
 
 /* JS */
