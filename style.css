@@ -61,6 +61,8 @@ h2 {
 table {
   width: 100%;
   border-collapse: collapse;
+  border-radius: 0.8rem;
+  overflow: hidden;
 }
 
 th, td {
@@ -73,6 +75,7 @@ th {
   color: #fff;
 
   background: var(--color-secondary);
+  
 }
 
 tr:nth-of-type(2n) {
