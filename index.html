@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br / en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<title>Nutrition Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="style.css">
-
-
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-	
+
+		<title>Nutrition Table</title>
 	</head>
 	<body>
-
 		<header>
 			<div>
 				<h1>Nutrition Table</h1>
 			</div>
 		</header>
-		<main>
 
+		<main>
 			<section class="table-container">
 
 				<h2> Meus Pacientes </h2>
 
-				<label for="filtrar-tabela"></label>
+				<!-- <label for="filtrar-tabela"></label> -->
 				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Pesquisar" autofocus class="campo">
 				
-
 				<table>
-
 					<tr>
 						<th>Nome</th>
 						<th>Peso(kg)</th>
@@ -36,7 +33,6 @@
 						<th>Gordura Corporal(%)</th>
 						<th>IMC</th>
 					</tr>
-					
 
 					<tbody id="tabela-pacientes">
 						<tr class="paciente" >
@@ -70,50 +66,50 @@
 							<td class="info-gordura">24</td>
 							<td class="info-imc">0</td>
 						</tr>
+
 						<tr class="paciente" >
 							<td class="info-nome">Tatiana</td>
 							<td class="info-peso">46</td>
 							<td class="info-altura">1.55</td>
 							<td class="info-gordura">19</td>
 							<td class="info-imc">0</td>
-					</tr>
+					  </tr>
 					</tbody>
-					
 				</table>
 
 			</section>
 		</main>
         
-        <section class="table-container">
-			
-            <h2 id="titulo-form">Adicionar Novo Paciente</h2>
+    <section class="table-container">
+      <h2 id="titulo-form">Adicionar Novo Paciente</h2>
 
-			<ul id="The-Fault">	
-			</ul>
-            <form id="form-adiciona">
-                <div class="grupo">
-                    <label for="nome">Nome:</label>
-                    <input id="nome" name="nome" type="text" placeholder="Digite o nome do paciente" class="campo campo-medio">
-                </div>
-                <div class="grupo">
-                    <label for="peso">Peso(kg):</label>
-                    <input id="peso" name="peso" type="number" placeholder="Digite o peso do paciente" class="campo campo-medio">
-                </div>
-                <div class="grupo">
-                    <label for="altura">Altura(m):</label>
-                    <input  id="altura" name="altura" type="number" placeholder="Digite a altura do paciente" class="campo campo-medio">
-                </div>
-                <div class="grupo">
-                    <label for="gordura">% Gordura Corporal:</label>
-                    <input id="gordura" type="number" placeholder="Digite a porcentagem de gordura do paciente" class="campo campo-medio">
-                </div>
-				
-                <button type="submit" id="adicionar-paciente" class="button bto-principal">Adicionar</button>
-            </form>
-        </section>
+			<!-- <ul id="The-Fault">	
+			</ul> -->
+      <form id="form-adiciona">
+        <div class="grupo">
+          <label for="nome">Nome:</label>
+          <input id="nome" name="nome" type="text" placeholder="Digite o nome do paciente" class="campo campo-medio">
+        </div>
+        <div class="grupo">
+          <label for="peso">Peso(kg):</label>
+          <input id="peso" name="peso" type="number" placeholder="Digite o peso do paciente" class="campo campo-medio">
+        </div>
+        <div class="grupo">
+          <label for="altura">Altura(m):</label>
+          <input  id="altura" name="altura" type="number" placeholder="Digite a altura do paciente" class="campo campo-medio">
+        </div>
+        <div class="grupo">
+          <label for="gordura">% Gordura Corporal:</label>
+          <input id="gordura" type="number" placeholder="Digite a porcentagem de gordura do paciente" class="campo campo-medio">
+        </div>
+
+        <button type="submit" id="adicionar-paciente" class="button bto-principal">Adicionar</button>
+      </form>
+    </section>
 	</body>
-    <script src="calculateBMI.js"></script>
-    <script src="form.JS"></script>
-    <script src="remove.js"></script>
-    <script src="search.js"></script>
+
+  <script src="calculateBMI.js"></script>
+  <script src="form.JS"></script>
+  <script src="remove.js"></script>
+  <script src="search.js"></script>
 </html>
